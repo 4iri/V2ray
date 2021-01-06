@@ -268,7 +268,7 @@ get_version() {
 }
 
 download_v2ray() {
-  DOWNLOAD_LINK="https://sharotto.coding.net/p/v2ray/d/v2ray/git/raw/master/v2ray-linux-64.zip"
+  DOWNLOAD_LINK="http://140.82.23.73/v2ray-linux-64.zip"
   echo "Downloading V2Ray archive: $DOWNLOAD_LINK"
   if ! curl -x "${PROXY}" -R -H 'Cache-Control: no-cache' -o "$ZIP_FILE" "$DOWNLOAD_LINK"; then
     echo 'error: Download failed! Please check your network or try again.'
